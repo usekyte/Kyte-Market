@@ -1,8 +1,7 @@
 import { NextResponse, type NextRequest } from 'next/server'
 
 /**
- * Same-origin gateway to the indexer, for hosts where the indexer is a private service (Render: a pserv reachable
- * only on the internal network). Set NEXT_PUBLIC_INDEXER_URL=/api/indexer and INDEXER_INTERNAL_URL (or
+ * Same-origin gateway to the indexer, for hosts where the indexer is a private service (a private service on the host's internal network). Set NEXT_PUBLIC_INDEXER_URL=/api/indexer and INDEXER_INTERNAL_URL (or
  * INDEXER_INTERNAL_HOSTPORT) on the web service. Read-only: GET only, known routes only, no cookies forwarded.
  */
 const ALLOWED = /^(health|assets|offers|activity|prices|candles|markers|expirable|proof|stats|positions\/0x[0-9a-fA-F]{40}|stake\/0x[0-9a-fA-F]{40}|offers\/\d{1,80})$/

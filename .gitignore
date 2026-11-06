@@ -5,15 +5,4 @@ node_modules
 *.tsbuildinfo
 next-env.d.ts
 indexer/data
-
-scripts/mainnet/.env
-scripts/mainnet/out
 .DS_Store
-ops/docker/secrets/
-ops/docker/prod.env
-
-# demo film media
-video/recordings/
-video/out/
-video/remotion/node_modules/
-video/remotion/public/recordings

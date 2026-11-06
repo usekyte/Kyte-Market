@@ -1,5 +1,5 @@
 {
-  "name": "gust-website",
+  "name": "kyte-market",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -8,12 +8,7 @@
     "build": "next build",
     "start": "next start -p 3010",
     "typecheck": "tsc --noEmit",
-    "sync": "node scripts/sync-contracts.mjs",
-    "indexer": "node indexer/src/index.mjs",
-    "keeper": "node keeper/src/index.mjs",
-    "devnet": "cd contracts && ~/.foundry/bin/anvil --port 8547 --chain-id 31337",
-    "devnet:deploy": "cd contracts && ~/.foundry/bin/forge script script/DeployDevnet.s.sol --rpc-url http://127.0.0.1:8547 --broadcast && cd .. && node scripts/sync-contracts.mjs",
-    "trader": "node scripts/devnet-trader.mjs"
+    "indexer": "node indexer/src/index.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
